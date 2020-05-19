@@ -1,0 +1,20 @@
+$colors: (
+    primary1: #2CE59E,
+    primary2: #397B82,
+    secondary1: #4A2770,
+    secondary2: #452469,
+    text1: #251438,
+    text2: #FFF,
+    shade1: #AAAAAA,
+    shade2: #E2E2E2,
+    shade3: #EEEEEE,
+    shade4: #F6F6F6
+);
+
+@function color($variant) {
+  $value: map-get($colors, $variant);
+  @if $value == null {
+    @error "Color variant `#{$variant}` not found. Available colors: primary 1-2, secondary 1-2, text1, shade 1-4.";
+  }
+  @return $value;
+}
