@@ -4,8 +4,13 @@ body {
   color: color(text1);
 }
 
+p {
+  line-height: 25px;
+}
+
 a {
   color: color(primary1);
+  text-decoration: none;
 }
 //</editor-fold>
 
