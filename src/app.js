@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 async function App() {
   const template = document.createElement('template')
   template.innerHTML = `
-    <div class="container">
+    <div>
       ${Header()}
       ${Footer()}
     </div>
