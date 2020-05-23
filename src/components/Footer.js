@@ -1,3 +1,5 @@
+import foo from "../images/parceljs-logo.png"; console.log(foo);
+
 
 const Footer = () => {
 
@@ -11,8 +13,7 @@ const Footer = () => {
                 </div>
                 <div class="col-sm-push-3 col-sm-3 footer-right">
                    <div class="social-media">
-                        <img src="https://fahren-lernen.net/user/themes/losacker/images/facebook.svg" alt="test" />
-                        <img src="https://fahren-lernen.net/user/themes/losacker/images/youtube.svg" alt="test" />
+                        <img src={foo} alt="test" /> 
                     </div>
                     <div class="legal-protection">
                         <a href="">Impressum</a>

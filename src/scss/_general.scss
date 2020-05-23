@@ -12,7 +12,28 @@ a {
   color: color(primary1);
   text-decoration: none;
 }
+
+.shadow {
+  box-shadow:
+          0  5px 10px rgba(154,160,185,0.05),
+          0 15px 40px rgba(166,173,201,0.2);
+}
 //</editor-fold>
+
+
+//<editor-fold desc="TEXT-ALIGNMENT">
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+  //</editor-fold>
 
 //<editor-fold desc="BACKGROUNDS">
 .bullets-background  {
