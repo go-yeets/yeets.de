@@ -11,6 +11,11 @@ p {
 a {
   color: color(primary1);
   text-decoration: none;
+  transition: 0.2s ease color;
+
+  &:hover {
+    color: color(primary2);
+  }
 }
 
 .shadow {
