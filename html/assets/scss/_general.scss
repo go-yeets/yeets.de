@@ -1,0 +1,50 @@
+* {
+    font-family: "univia-pro", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    color: #251438;
+  }
+  
+  p {
+    line-height: 25px;
+  }
+  
+  a {
+    color: #2CE59E;
+    text-decoration: none;
+    transition: 0.2s ease color;
+        &:hover {
+            color: #397B82;
+        }
+  }
+  
+  .shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .bullets-background {
+    background-position: 0 0;
+    background-size: 20px 20px;
+  }
+  
+  .bullets-background.violet {
+    background-image: radial-gradient(#452469 15%, #4A2770 20%);
+  }
+  
+  .bullets-background.grey {
+    background-image: radial-gradient(#F6F6F6 15%, #FFF 20%);
+} 
