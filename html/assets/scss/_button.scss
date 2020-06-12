@@ -23,3 +23,32 @@ button {
         box-shadow: 0 3px 5px -5px color(primary2);
     }
 }
+
+.scroll-top-container {
+    justify-content: center;
+    position: relative;
+    transform: translateY(15px);
+
+    span {
+        border-radius: 50%;
+        border: 10px solid white;
+
+        .scroll-top{
+            border-radius: 50%;
+            display: inline-block;
+            background: #fff;
+            text-align: center;
+            transition: box-shadow ease-in-out 0.2s;
+        
+            img {
+                height: 25px;
+                width: 25px;
+                margin: 20px;
+            }
+
+            &:hover {
+                box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025), 0 15px 40px rgba(166, 173, 201, 0.1);
+            }
+        }
+    }
+}

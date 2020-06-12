@@ -1,8 +1,10 @@
 header {
-    background: color(shade2);
+    background: color(shade3);
     display: flex;
     min-height: 600px; 
     margin-top: 58px;
+
+background-image: url("../images/geometry.png");
 
     .row {
         height: 100%;
@@ -14,6 +16,7 @@ header {
             width: 106%;
             max-width: 600px;
             opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
         } 
 
         .header-info {
@@ -59,4 +62,16 @@ header {
             }
         }
     }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

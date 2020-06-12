@@ -1,14 +1,18 @@
 #customer {
     background: color(shade3);
 
-    img {
-        height: 50px;
-        margin: 20px 0;
-        filter: grayscale(1);
+    .customer-item {
+        text-align: center; 
 
-        &:hover {
-            filter: grayscale(0);
-            transition: ease-in-out filter 0.3s;
+        img {
+            height: 40px;
+            margin: 20px 0;
+            filter: grayscale(1);
+    
+            &:hover {
+                filter: grayscale(0);
+                transition: ease-in-out filter 0.3s;
+            }
         }
     }
 }
