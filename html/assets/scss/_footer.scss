@@ -13,30 +13,6 @@ footer {
             flex-direction: column;
             justify-content: flex-end;
             margin-top: 60px;
-        
-            .social-media {
-              a{
-                display: inline-block;
-                
-                &:first-of-type {
-                  img {
-                    margin-left: 0px;
-                  }
-                }
-        
-                img {
-                  width: 40px;
-                  height: 40px;
-                  display: inline-block;
-                  margin-left: 8px;
-                  transition: 0.2s ease filter;
-        
-                  &:hover {
-                    filter: brightness(0.5) hue-rotate(65deg);
-                  }
-                }
-              }
-            }
   
             .legal-protection {
               margin-block-start: 1em;
@@ -64,24 +40,6 @@ footer {
               height: 100%;
               align-items: flex-end;
               margin-top: 0;
-          
-              .social-media {
-                a{
-                  
-                  &:first-of-type {
-                    img {
-                    }
-                  }
-          
-                  img {
-                    &:hover {
-                    }
-                  }
-                }
-              }
-    
-              .legal-protection {
-              }
             }
           }
         }

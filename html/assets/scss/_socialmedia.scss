@@ -1,0 +1,35 @@
+.social-media {
+    a{
+      display: inline-block;
+      
+      &:first-of-type {
+        img {
+          margin-left: 0px;
+        }
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        margin-left: 8px;
+        transition: 0.2s ease filter;
+
+        &:hover {
+          filter: brightness(0.5) hue-rotate(65deg);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    header {
+        .social-media {
+          top: 70px;
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+    }
+  }
