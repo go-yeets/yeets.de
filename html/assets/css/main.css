@@ -1,12 +1,28 @@
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer; }
+  button:focus {
+    border: 0;
+    outline: 0; }
+
 .button-primary {
   background: #2CE59E;
   box-shadow: 0 6px 30px -10px #2CE59E;
   padding: 8px 20px;
   border-radius: 1px;
-  color: #FFF; }
+  color: #FFF;
+  transition: ease-in-out .2s all; }
+  .button-primary:hover {
+    color: #FFF;
+    background: #397B82;
+    box-shadow: 0 3px 5px -5px #397B82; }
 
 * {
   font-family: "univia-pro", sans-serif; }
+  *::selection {
+    background: #2CE59E;
+    color: #251438; }
 
 body {
   margin: 0;
@@ -119,8 +135,10 @@ nav {
       color: #4A2770; }
       nav ul li a:hover,
       nav ul li a .menu-btn:hover {
-        background-color: #f4f4f4;
         color: #2CE59E; }
+  nav.sticky {
+    position: sticky;
+    top: 0; }
 
 @media (min-width: 768px) {
   nav {
@@ -165,7 +183,7 @@ nav {
 header {
   background: #E2E2E2;
   display: flex;
-  min-height: 80vh;
+  min-height: 600px;
   margin-top: 58px; }
   header .row {
     height: 100%; }
@@ -204,11 +222,14 @@ header {
     header .row .header-info {
       padding: 0 60px; } }
 
-#service img {
-  width: 50px; }
-
-#service strong {
-  display: block; }
+#service .service-item {
+  text-align: center; }
+  #service .service-item strong {
+    display: block;
+    margin-bottom: 20px; }
+  #service .service-item img {
+    width: 50px;
+    height: 50px; }
 
 #about-us {
   background: #F6F6F6; }
@@ -218,6 +239,27 @@ header {
 
 #expertise img {
   width: 50px; }
+
+#contact .contact-container {
+  background: #F6F6F6; }
+
+#contact .form-group input {
+  width: 100%;
+  height: 40px; }
+
+#contact .form-group textarea {
+  width: 100%;
+  min-height: 100px; }
+
+#customer {
+  background: #EEEEEE; }
+  #customer img {
+    height: 50px;
+    margin: 20px 0;
+    filter: grayscale(1); }
+    #customer img:hover {
+      filter: grayscale(0);
+      transition: ease-in-out filter 0.3s; }
 
 footer {
   color: #FFF;

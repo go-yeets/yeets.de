@@ -1,5 +1,10 @@
 * {
     font-family: "univia-pro", sans-serif;
+
+    &::selection {
+      background: color(primary1);
+      color: color(text1);
+    }
   }
   
   body {

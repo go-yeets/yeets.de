@@ -102,11 +102,15 @@
 
           &:hover,
           .menu-btn:hover {
-            background-color: #f4f4f4;
             color: color(primary1);
           }
         }
       }
+    }
+
+    &.sticky {
+      position: sticky;
+      top: 0;
     }
   } 
   

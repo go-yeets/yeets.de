@@ -36,19 +36,19 @@
 				</div>
 			</div>
 		</header>
-		<nav>
+		<nav class="navigation"> 
 			<a href="" class="logo">
 				<img src="./assets/images/logo.png" alt="Yeets! Logo" class="logo">
 			</a>
 			<input class="menu-btn" type="checkbox" id="menu-btn" />
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 			<ul class="menu">
-			  <li><a href="#work">Leistungen</a></li>
-			  <li><a href="#about">Über uns</a></li>
-			  <li><a href="#careers">Referenzen</a></li>
-			  <li><a href="#contact">Expertise</a></li>
+			  <li><a href="#service">Leistungen</a></li>
+			  <li><a href="#about-us">Über uns</a></li>
+			  <li><a href="#references">Referenzen</a></li>
+			  <li><a href="#expertise">Expertise</a></li>
 			  <li><a href="#contact">Kontakt</a></li>
-			  <li><a href="#contact">Jobs</a></li>
+			  <li><a href="#jobs">Jobs</a></li>
 			</ul>
 		</nav>
 
@@ -63,19 +63,19 @@
 							Wir lassen Ihre noch so ausgefallene Idee real werden und entwickeln ein stimmiges Konzept. Ganz egal ob im Digital oder Print Bereich. Ganz gleich ob Logo, Webseite, Broschüre, Onlineshop, Visitenkarte oder WebApp. Hier wird exportiert und kompiliert bis wir das Beste aus Ihrer Idee herausgeholt haben. 
 						</p>
 					</div>
-					<div class="col-6 col-sm-3">
+					<div class="col-6 col-sm-3 service-item">
 						<strong>Konzeption</strong>
 						<img src="./assets/images/icons/clipboard-list-check-light.svg" alt="Konzeption Icon mit Clipboard Abbildung">
 					</div>
-					<div class="col-6 col-sm-3">
+					<div class="col-6 col-sm-3 service-item">
 						<strong>Design</strong>
 						<img src="./assets/images/icons/pencil-paintbrush-light.svg" alt="Design Icon mit Pinsel Abbildung">
 					</div>
-					<div class="col-6 col-sm-3">
+					<div class="col-6 col-sm-3 service-item">
 						<strong>Hosting</strong>
 						<img src="./assets/images/icons/server-light.svg" alt="Hosting Icon mit Server Abbildung">
 					</div>
-					<div class="col-6 col-sm-3">
+					<div class="col-6 col-sm-3 service-item">
 						<strong>Umsetzung</strong>
 						<img src="./assets/images/icons/magic-light.svg" alt="Umsetzung Icon mit Zauberstab Abbildung">
 					</div>
@@ -148,28 +148,58 @@
 		<section id="contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 shadow">
+					<div class="col-12 shadow contact-container">
 						<h2>Ein Wort an Yeets!</h2>
 						<p>Aller Anfang ist schwer, das wissen wir, aber jedes Projekt hat irgendwo sein angefangen – warum also nicht hier? </p>
-						<form action="">
-							<div class="form-group">
+						<form class="row" action="">
+							<div class="form-group col-sm-6">
 								<label for=""></label>
 								<input type="text">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-sm-6">
 								<label for=""></label>
 								<input type="text">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-12">
 								<label for=""></label>
 								<textarea type="text"></textarea>
 							</div>
+							<button class="button-primary">
+								Absenden
+							</button>
 						</form>
 					</div> 
 				</div>
 		</section>
 
-		<footer class="bullets-background violet">
+		<section id="customer">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-sm-3">
+						<a href="https://fahrschule-losacker.de/">
+							<img src="./assets/images/logo_fahrschule-losacker.png" alt="Fahrschule Losacker Logo">
+						</a>
+					</div>
+					<div class="col-6 col-sm-3">
+						<a href="https://fahrschule-losacker.de/">
+							<img src="./assets/images/logo_fahrschule-losacker.png" alt="Fahrschule Losacker Logo">
+						</a>
+					</div>
+					<div class="col-6 col-sm-3">
+						<a href="https://fahrschule-losacker.de/">
+							<img src="./assets/images/logo_fahrschule-losacker.png" alt="Fahrschule Losacker Logo">
+						</a>
+					</div>
+					<div class="col-6 col-sm-3">
+						<a href="https://fahrschule-losacker.de/">
+							<img src="./assets/images/logo_fahrschule-losacker.png" alt="Fahrschule Losacker Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="#jobs" class="bullets-background violet">
 			<div class="container">
 				<div class="row"> 
 					<div class="col-sm-7">
@@ -201,6 +231,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="/assets/js/script.js"></script>
+		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
