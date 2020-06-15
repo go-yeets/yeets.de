@@ -108,17 +108,17 @@
         }
       }
     }
-
-    &.sticky {
-      position: sticky;
-      top: 0;
-    }
   } 
   
   @media (min-width: 768px) {
     nav {
       top: auto;
       position: relative;
+
+      .nav-container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
 
       li {
         float: left;
@@ -127,17 +127,32 @@
           padding: 20px 30px;
         }
       }
+
       .menu {
         display: flex;
         clear: none;
         max-height: none;
         width: 100%;
-        max-width: 960px;
         justify-content: space-between;
         margin: 0 auto;
       }
+
       .menu-icon {
         display: none;
+      }
+
+      &.sticky {
+        position: sticky;
+        top: 0;
+  
+        .logo {
+          display: inline-block;
+        }
+
+        .menu {
+          width: auto; 
+          justify-content: flex-end;
+        }
       }
     }
   }

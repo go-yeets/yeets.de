@@ -22,3 +22,14 @@ const scrollToTop = () => {
       window.scrollTo(0, c - c / 16);
     }
 };
+
+//SMOOTH SCROLL ANCHOR LINKS
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
