@@ -10,7 +10,7 @@ button {
   background: #2CE59E;
   box-shadow: 0 6px 30px -10px #2CE59E;
   padding: 8px 20px;
-  border-radius: 1px;
+  border-radius: 3px;
   color: #FFF;
   transition: ease-in-out .2s all; }
   .button-primary:hover {
@@ -39,7 +39,8 @@ button {
         box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025), 0 15px 40px rgba(166, 173, 201, 0.1); }
 
 * {
-  font-family: "univia-pro", sans-serif; }
+  font-family: "univia-pro", sans-serif;
+  cursor: url("../images/icons/pointer.png"), auto; }
   *::selection {
     background: #2CE59E;
     color: #251438; }
@@ -58,7 +59,8 @@ a {
   transition: 0.2s ease color; }
   a:hover {
     color: #397B82;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: url("../images/icons/pointer-clickable.png"), auto; }
 
 .shadow {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2); }
@@ -164,7 +166,7 @@ nav {
     top: auto;
     position: relative; }
     nav .nav-container {
-      max-width: 960px;
+      max-width: 720px;
       margin: 0 auto; }
     nav li {
       float: left; }
@@ -187,6 +189,14 @@ nav {
       nav.sticky .menu {
         width: auto;
         justify-content: flex-end; } }
+
+@media (min-width: 992px) {
+  nav .nav-container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  nav .nav-container {
+    max-width: 1140px; } }
 
 .social-media a {
   display: inline-block; }
@@ -291,6 +301,34 @@ header {
 
 #references {
   padding: 100px 0; }
+  #references .cardslider {
+    height: 710px; }
+    #references .cardslider li[class*="cardslider__card--index-"] {
+      background: transparent; }
+    #references .cardslider .cardslider__dot-btn {
+      border-color: #E2E2E2; }
+    #references .cardslider .cardslider__dot--active .cardslider__dot-btn {
+      border: 2px solid #2CE59E; }
+  #references .references-item {
+    width: 400px;
+    background: #4A2770;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 30px;
+    transform-style: preserve-3d;
+    transform: perspective(300px); }
+    #references .references-item img {
+      width: 370px;
+      border-radius: 3px;
+      margin-bottom: 40px;
+      margin-top: 16px;
+      margin-left: 12px;
+      transform: translateZ(20px); }
+    #references .references-item p {
+      margin-bottom: 40px; }
+    #references .references-item a {
+      transform: translateZ(20px);
+      display: inline-block; }
   #references .proud-yeetboy {
     width: 100%; }
 
@@ -305,7 +343,7 @@ header {
     margin: 0; }
     #contact .row .contact-container {
       background: #EEEEEE;
-      border-radius: 2px;
+      border-radius: 3px;
       box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); }
     #contact .row .form-group input {
       width: 100%;

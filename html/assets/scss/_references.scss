@@ -1,6 +1,53 @@
 #references {
     padding: 100px 0;
-    
+
+    .cardslider {
+        height: 710px;
+
+        li[class*="cardslider__card--index-"] {
+            background: transparent;
+        }
+
+        .cardslider__dot-btn {
+            border-color: color(shade2);
+        }
+
+        .cardslider__dot--active {
+            .cardslider__dot-btn {
+                border: 2px solid color(primary1);
+            }
+        }
+    }
+
+        .references-item {
+            width: 400px;
+            background: color(secondary1);
+            color:color(text2);
+            border-radius: 6px;
+            padding: 30px; 
+            transform-style: preserve-3d;
+            transform: perspective(300px);
+
+            img {
+                width: 370px;
+                border-radius: 3px;
+                margin-bottom: 40px;
+                margin-top: 16px;
+                margin-left: 12px;
+                transform: translateZ(20px);
+            }
+
+            p {
+                margin-bottom:40px;
+                
+            }
+
+            a {
+                transform: translateZ(20px); 
+                display: inline-block;
+            }
+        }
+
     .proud-yeetboy{
         width: 100%; 
     }

@@ -1,6 +1,7 @@
 * {
     font-family: "univia-pro", sans-serif;
-
+    cursor: url('../images/icons/pointer.png'), auto;	
+    
     &::selection {
       background: color(primary1);
       color: color(text1);
@@ -23,7 +24,8 @@
     transition: 0.2s ease color;
         &:hover {
             color: #397B82;
-            text-decoration: none;;
+            text-decoration: none;
+            cursor: url('../images/icons/pointer-clickable.png'), auto;	
         }
   }
 

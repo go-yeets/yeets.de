@@ -7,7 +7,11 @@
 		<link rel="stylesheet" href="https://use.typekit.net/jfc2lyz.css">
 		<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favico.ico">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/css/main.css"></head>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="./assets/css/cardslider.css">
+		<link rel="stylesheet" href="./assets/css/main.css">
+	</head>
+	
 	<body>
 		<header>
 			<div class="container">
@@ -17,7 +21,7 @@
 					</div>
 					<div class="col-sm-6 header-info"> 
 						<img src="./assets/images/logo.png" alt="Yeets! Logo" class="logo">
-						<p>Wenn es um Konzeption, Design und Webtechnologien geht, sind wir mit Leidenschaft bei der sache und euphorisch auf das was wir zusammen aus Ihrem Projekt machen können. Am Ende entsteht für Sie eine Lösung, die garantiert mehr als der Standard ist.</p>
+						<p>Wenn es um <strong>Konzeption, Design und Webtechnologien</strong> geht, sind wir mit Leidenschaft bei der Sache und gespannt auf das, was wir zusammen aus Ihrem Projekt herausholen können. Eins ist jedoch sicher - am Ende entsteht für Sie eine Lösung, die garantiert mehr als der Standard ist.</p>
 						<span>
 							<a class="button-primary" href="#contact">Interesse bekunden</a> <a class="contact-link" href="mailto:kontakt@yeets.de">kontakt@yeets.de</a>
 						</span>
@@ -108,17 +112,48 @@
 			</div>
 		</section>
 
-		<section id="references">
+		<section id="references" class="bullets-background grey">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<h2>Referenzen</h2>
 						<strong>Eine kleine Auswahl unserer bisherigen erfolge</strong>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-7">
+
+						<div class="my-slider">
+							<ul>
+							  <li>
+								<div data-tilt class="js-tilt references-item shadow">
+									<img src="https://pixelify.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/05/22111718/1-8.jpg" alt="">
+									<h3>fahren-lernen.net</h3>
+									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna ayam erat, sed diam voluptua. </p>
+									<a class="button-primary" href="#contact">Ansehen</a>
+								</div>		
+							  </li>
+							  <li>
+								<div data-tilt class="js-tilt references-item shadow">
+									<img src="https://pixelify.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/05/22111718/1-8.jpg" alt="">
+									<h3>fahren-lernen.net</h3>
+									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna ayam erat, sed diam voluptua. </p>
+									<a class="button-primary" href="#contact">Ansehen</a>
+								</div>		
+							  </li>
+							  <li>
+								<div data-tilt class="js-tilt references-item shadow">
+									<img src="https://pixelify.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/05/22111718/1-8.jpg" alt="">
+									<h3>fahren-lernen.net</h3>
+									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna ayam erat, sed diam voluptua. </p>
+									<a class="button-primary" href="#contact">Ansehen</a>
+								</div>		
+							  </li>
+							</ul>
+						  </div>
 						
+					
+
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-5">
 						<img class="proud-yeetboy" src="./assets/images/yeetman.png" alt="Yeetboy sieht sich stolz die Referenzen der Yeets! GbR an">
 					</div> 
 				</div>
@@ -176,12 +211,14 @@
 				</div>
 		</section>
 
-		<div class="row scroll-top-container">
-			<span>
-				<a class="scroll-top shadow" href="javascript:scrollToTop();">
-					<img src="./assets/images/icons/arrow-alt-up-solid.svg" alt="Pfeil nach oben Icon">
-				</a>
-			</span>
+		<div class="container-fluid">
+			<div class="row scroll-top-container">
+				<span>
+					<a class="scroll-top shadow" href="javascript:scrollToTop();">
+						<img src="./assets/images/icons/arrow-alt-up-solid.svg" alt="Pfeil nach oben Icon">
+					</a>
+				</span>
+			</div>
 		</div>
 
 		<section id="customer">
@@ -243,6 +280,13 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="./assets/js/tilt.jquery.min.js"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script src="./assets/js/jquery.cardslider.min.js"></script>
+		<script src="./assets/js/jquery.event.move.js"></script>
+		<script src="./assets/js/jquery.event.swipe.js"></script>
 		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
+ 

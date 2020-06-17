@@ -1,5 +1,4 @@
 //STICKY NAV ON SCROLL
-
 var scrollPosition = window.scrollY;
 var navbar = document.getElementsByClassName('navigation');
 
@@ -32,4 +31,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+//TILT OPTIONS
+$( document ).ready(function() {
+    $('.js-tilt').tilt({
+        perspective: 2000
+    })
+});
+
+
+//INITILIZE SWIPER
+$(document).ready(function(){
+    $('.my-slider').cardslider({
+        keys: {
+          next: 38,
+          prev: 40
+        },
+        direction: 'right',
+        nav: false,
+        swipe: true,
+        dots: true,
+        loop: false,
+        beforeCardChange: null,
+        afterCardChange: null   
+      })
 });

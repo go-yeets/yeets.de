@@ -116,7 +116,7 @@
       position: relative;
 
       .nav-container {
-        max-width: 960px;
+        max-width: 720px;
         margin: 0 auto;
       }
 
@@ -156,4 +156,20 @@
       }
     }
   }
-  
+   
+
+  @media (min-width: 992px) {
+    nav {
+      .nav-container {
+        max-width: 960px;
+      }
+  }
+  }
+
+  @media (min-width: 1200px) {
+    nav {
+      .nav-container {
+        max-width: 1140px;
+      }
+  }
+}
