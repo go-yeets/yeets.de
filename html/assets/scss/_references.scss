@@ -48,7 +48,34 @@
             }
         }
 
+    .yeetboy-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
     .proud-yeetboy{
-        width: 100%; 
+        width: 100%;
+    }
+    .proud-yeetboy-head {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transform: translateY(20px) translate3d(0,0,0) rotate(0.1deg) !important;
+        animation: float 2s ease-in-out infinite;
+        -webkit-font-smoothing: antialiased;
+        backface-visibility: hidden;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translatey(24px);
+    }
+    100% {
+        transform: translateY(20px);
     }
 }
