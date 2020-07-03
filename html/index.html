@@ -189,23 +189,32 @@
 					<div class="col-12 contact-container">
 						<h2>Ein Wort an Yeets!</h2>
 						<p>Aller Anfang ist schwer, das wissen wir, aber jedes Projekt hat irgendwo sein angefangen – warum also nicht hier? </p>
-						<form class="row" action="">
+						<form class="row" id="contactform" action="form.php" onsubmit="submitForm(); return false;" >
 							<div class="form-group col-sm-6">
-								<input type="text" required>
+								<input type="text" id="name" required>
 								<label for="">Name</label>
 							</div>
 							<div class="form-group col-sm-6">
-								<input type="text" required>
+								<input type="text" id="mail" required>
 								<label for="">Email</label>
 							</div>
 							<div class="form-group col-12">
-								<textarea type="text" required></textarea>
+								<textarea type="text" id="message" required></textarea>
 								<label for="">Message</label>
 							</div>
 							<div class="form-group col-12">
-								<button class="button-primary">
+								<button id="submit-btn" class="button-primary">
 									Absenden
 								</button>
+								<span id="status">
+									<div class="loadingio-spinner-rolling-6gof9j0ynmw">
+										<div class="ldio-723u9s82i0a">
+											<div>
+
+											</div>
+										</div>
+									</div>
+								</span>
 							</div>
 						</form>
 					</div> 

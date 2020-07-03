@@ -1,76 +1,100 @@
 #contact {
     padding: 100px 0;
+
+    &::before {
+        height: 200px;
+        content: '';
+        width: 100%;
+        margin-top: 130px;
+        position: absolute;
+        background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
+        background-position: 0 0;
+        background-size: 20px 20px;
+    }
+
     .row {
         margin: 0;
 
         .contact-container {
-            background: color(shade3); 
-            border-radius:3px;
+            background: #fff;
+            background-image: linear-gradient(141deg, rgba(255, 255, 255, 0.6), rgba(246, 246, 246, 0.6));
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border-radius: 3px;
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-            padding: 50px 60px; 
+            padding: 30px 30px;
 
             form {
-                margin-top:50px;
+                margin-top: 50px;
+
+                h3 {
+                    margin: 0 15px;
+                }
 
                 .form-group {
+                    padding: 0;
+                    margin-bottom: 0;
+
                     label {
                         margin: 0;
                         position: absolute;
                         top: 0px;
-                        left: 28px;
+                        left: 12px;
                         padding: 8px 0;
                         color: color(text1);
                         pointer-events: none;
-                        transition: .5s;
+                        transition: .25s;
                     }
-        
+
                     input {
                         width: 100%;
-                        padding: 10px 0;
+                        padding: 10px;
                         color: color(text1);
                         margin-bottom: 30px;
                         border: none;
-                        border-bottom: 1px solid color(text1);
+                        border-bottom: 2px solid color(secondary1);
                         outline: none;
-                        background: transparent;
+                        background: color(shade4);
                         height: 40px;
-        
+
                         &:focus {
-                            border-bottom: 1px solid color(primary1);
+                            border-bottom: 2px solid color(primary1);
                         }
-        
+
                         &:valid ~ label,
                         &:focus ~ label {
-                            top: -20px;
-                            left: 13px;
+                            top: -28px;
+                            left: 0;
                             color: color(primary1);
                             font-size: 12px;
-                          }
+                        }
                     }
+
                     textarea {
                         width: 100%;
-                        padding: 10px 0;
+                        padding: 10px;
                         color: color(text1);
                         margin-bottom: 30px;
                         border: none;
-                        border-bottom: 1px solid color(text1);
+                        border-bottom: 2px solid color(secondary1);
                         outline: none;
-                        background: transparent;
+                        background: color(shade4);
                         min-height: 60px;
 
                         &:focus {
-                            border-bottom: 1px solid color(primary1);
+                            border-bottom: 2px solid color(primary1);
                         }
-        
+
                         &:valid ~ label,
                         &:focus ~ label {
-                            top: -20px;
-                            left: 13px;
+                            top: -28px;
+                            left: 16px;
                             color: color(primary1);
                             font-size: 12px;
-                          }
+                        }
                     }
-                    &::nth-last-of-type(1) {
+
+                    &:nth-last-of-type(1) {
                         margin-bottom: 0;
                     }
                 }
@@ -79,10 +103,85 @@
     }
 }
 
-@media(min-width: 768px){
+
+@keyframes ldio-723u9s82i0a {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+#submit-btn {
+    &.wait {
+        padding: 8px 40px 8px 20px;
+    }
+}
+
+#status {
+    display: none;
+
+    &.wait {
+        display:inline-block;
+        top: -6px;
+        position: relative;
+        left: -24px;
+
+        .ldio-723u9s82i0a {
+            div {
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border: 2px solid #ffffff;
+                border-top-color: transparent;
+                border-radius: 50%;
+                animation: ldio-723u9s82i0a 1s linear infinite;
+                box-sizing: content-box;
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    #contact {
+        .row {
+            .contact-container {
+                form {
+                    .form-group {
+                        padding-right: 15px;
+                        padding-left: 15px;
+
+                        label {
+                            left: 27px;
+                        }
+
+                        input {
+                            &:valid ~ label,
+                            &:focus ~ label {
+                                left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
     #contact {
         .row {
             margin: 0 -15px;
+
+            .contact-container {
+                padding: 50px 60px;
+
+                form {
+                    .form-group {
+                    }
+                }
+            }
         }
     }
 }

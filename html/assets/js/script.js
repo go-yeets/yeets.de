@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     } else {
         navbar[0].classList.remove('sticky');
     }
-}); 
+});
 
 //SMOOTH SCROLL TO TOP
 const scrollToTop = () => {
@@ -41,7 +41,7 @@ $( document ).ready(function() {
 });
 
 
-//INITILIZE SWIPER
+//INITIALIZE_S
 $(document).ready(function(){
     $('.my-slider').cardslider({
         keys: {
@@ -54,6 +54,32 @@ $(document).ready(function(){
         dots: true,
         loop: false,
         beforeCardChange: null,
-        afterCardChange: null   
+        afterCardChange: null
       })
 });
+
+//CONTACT_FORM
+function submitForm(){
+    function _(id){ return document.getElementById(id); }
+    _("submit-btn").disabled = true;
+    _("submit-btn").innerHTML = "Bitte warten ...";
+    _("submit-btn").classList.add("wait");
+    _("status").classList.add("wait");
+    var formdata = new FormData();
+    formdata.append( "name", _("name").value );
+    formdata.append( "mail", _("mail").value );
+    formdata.append( "message", _("message").value );
+    var ajax = new XMLHttpRequest();
+    ajax.open( "POST", "form.php" );
+    ajax.onreadystatechange = function() {
+        if(ajax.readyState == 4 && ajax.status == 200) {
+            if(ajax.responseText == "success"){
+                _("contactform").innerHTML = '<h3>Danke '+_("name").value+', deine Nachricht wurde versendet.</h3>';
+            } else {
+                _("status").innerHTML = ajax.responseText;
+                _("submit-btn").disabled = false;
+            }
+        }
+    }
+    ajax.send( formdata );
+}
