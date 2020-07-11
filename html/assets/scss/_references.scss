@@ -1,6 +1,18 @@
 #references {
     padding: 100px 0;
 
+    &:before {
+        height: 620px;
+        content: '';
+        width: 50%;
+        margin-top: 130px;
+        position: absolute;
+        background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
+        background-position: 0 0;
+        right: 0;
+        background-size: 20px 20px;
+    }
+
     .cardslider {
         height: 710px;
 
@@ -20,7 +32,7 @@
     }
 
         .references-item {
-            width: 400px;
+            width: 280px;
             background: color(secondary1);
             color:color(text2);
             border-radius: 6px;
@@ -29,7 +41,7 @@
             transform: perspective(300px);
 
             img {
-                width: 370px;
+                width: 250px;
                 border-radius: 3px;
                 margin-bottom: 40px;
                 margin-top: 16px;
@@ -65,6 +77,34 @@
         animation: float 2s ease-in-out infinite;
         -webkit-font-smoothing: antialiased;
         backface-visibility: hidden;
+    }
+}
+
+@media (min-width: 768px){
+    #references {
+
+        .references-item {
+            width: 400px;
+
+            img {
+                width: 370px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    #references {
+        &:after {
+            height: 640px;
+            content: '';
+            width: 16%;
+            position: absolute;
+            background-image: url(../images/kachel.png);
+            background-position: 0 0;
+            right: 0;
+            background-size: 700px;
+        }
     }
 }
 

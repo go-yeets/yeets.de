@@ -1,6 +1,28 @@
-#expertise{
+#expertise {
     padding: 100px 0;
+
     img {
-        width: 50px;
+        width: 100%;
+    }
+
+    .handshake {
+        text-align: right;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    img {
+        width: 110px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+        .handshake {
+            width: 150px;
+            margin-right: 30px;
+        }
     }
 }

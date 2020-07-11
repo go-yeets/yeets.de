@@ -24,12 +24,13 @@
       clear: both;
       max-height: 0;
       transition: max-height .2s ease-out;
+      transform: translateY(-5px);
     }
 
     .menu-icon {
       cursor: pointer;
       display: inline-block;
-      padding: 25px 20px;
+      padding: 28px 20px;
       position: relative;
       user-select: none;
 
@@ -135,6 +136,7 @@
         width: 100%;
         justify-content: space-between;
         margin: 0 auto;
+        transform: translateY(0);
       }
 
       .menu-icon {
