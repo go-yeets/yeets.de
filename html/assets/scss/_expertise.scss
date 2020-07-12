@@ -15,14 +15,17 @@
 }
 
 @media(min-width: 768px) {
-    img {
-        width: 110px;
-        margin-left: 30px;
-        margin-bottom: 50px;
-
+    #expertise {
+        img {
+            width: 110px;
+            margin-left: 30px;
+            margin-bottom: 50px;
+        }
         .handshake {
-            width: 150px;
-            margin-right: 30px;
+            img {
+                width: 150px;
+                margin-right: 30px;
+            }
         }
     }
 }

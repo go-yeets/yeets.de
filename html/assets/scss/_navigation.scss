@@ -9,7 +9,7 @@
     top: 0;
 
     .logo {
-      display: none;
+      display: inline-block;
       float: left;
       padding: 14px 20px;
       text-decoration: none;
@@ -33,6 +33,8 @@
       padding: 28px 20px;
       position: relative;
       user-select: none;
+      right: 0px;
+      position: absolute;
 
       .navicon {
         background: #333;
@@ -140,6 +142,10 @@
       }
 
       .menu-icon {
+        display: none;
+      }
+
+      .logo {
         display: none;
       }
 

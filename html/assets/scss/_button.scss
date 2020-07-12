@@ -7,6 +7,12 @@ button {
         border: 0;
     outline: 0;
     }
+
+    &:hover {
+        * {
+            cursor: url('../images/icons/pointer-clickable.png'), auto;
+        }
+    }
 }
 
 .button-primary {

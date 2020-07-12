@@ -14,7 +14,7 @@
     }
 
     .cardslider {
-        height: 710px;
+        height: 800px;
 
         li[class*="cardslider__card--index-"] {
             background: transparent;
@@ -57,6 +57,7 @@
             a {
                 transform: translateZ(20px); 
                 display: inline-block;
+                margin-bottom: 16px;
             }
         }
 
@@ -89,6 +90,7 @@
             img {
                 width: 370px;
             }
+
         }
     }
 }
@@ -96,14 +98,14 @@
 @media (min-width: 1200px){
     #references {
         &:after {
-            height: 640px;
+            height: 680px;
             content: '';
             width: 16%;
             position: absolute;
             background-image: url(../images/kachel.png);
             background-position: 0 0;
             right: 0;
-            background-size: 700px;
+            background-size: 680px;
         }
     }
 }

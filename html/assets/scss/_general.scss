@@ -1,64 +1,91 @@
 * {
     font-family: "univia-pro", sans-serif;
-    cursor: url('../images/icons/pointer.png'), auto;	
-    
+    cursor: url('../images/icons/pointer.png'), auto;
+
     &::selection {
-      background: color(primary1);
-      color: color(text1);
+        background: color(primary1);
+        color: color(text1);
     }
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     color: #251438;
     scroll-behavior: smooth;
-  }
-  
-  p {
+    font-size: 15px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#references {
+    h2 {
+        margin-bottom: 8px;
+    }
+}
+
+strong {
+    + h2 {
+        margin-bottom: 0;
+    }
+}
+
+p {
     line-height: 25px;
-  }
-  
-  a {
+}
+
+a {
     color: #2CE59E;
     text-decoration: none;
     transition: 0.2s ease color;
-        &:hover {
-            color: #397B82;
-            text-decoration: none;
-            cursor: url('../images/icons/pointer-clickable.png'), auto;	
-        }
-  }
 
-  
-  .shadow {
+    &:hover {
+        color: #397B82;
+        text-decoration: none;
+        cursor: url('../images/icons/pointer-clickable.png'), auto;
+        * {
+            cursor: url('../images/icons/pointer-clickable.png'), auto;
+        }
+    }
+}
+
+
+
+
+.shadow {
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
-  }
-  
-  .text-left {
+}
+
+.text-left {
     text-align: left;
-  }
-  
-  .text-center {
+}
+
+.text-center {
     text-align: center;
-  }
-  
-  .text-right {
+}
+
+.text-right {
     text-align: right;
-  }
-  
-  .bullets-background {
+}
+
+.bullets-background {
     background-position: 0 0;
     background-size: 20px 20px;
-  }
-  
-  .bullets-background.violet {
+}
+
+.bullets-background.violet {
     background-image: radial-gradient(#452469 15%, #4A2770 20%);
-  }
-  
-  .bullets-background.grey {
+}
+
+.bullets-background.grey {
     background-image: radial-gradient(#F6F6F6 15%, #FFF 20%);
-} 
+}
 
 label {
-  margin: 0;;
+    margin: 0;;
 }

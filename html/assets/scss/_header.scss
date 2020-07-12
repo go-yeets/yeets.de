@@ -16,7 +16,7 @@ header {
             width: 106%;
             max-width: 600px;
             opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
+            animation: float 4s ease-in-out infinite;
             display: none;
         }
 
@@ -30,6 +30,7 @@ header {
 
             .logo {
                 margin-bottom: 20px;
+                max-width: 200px;
             }
 
             p {
