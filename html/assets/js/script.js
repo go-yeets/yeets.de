@@ -3,13 +3,19 @@ var scrollPosition = window.scrollY;
 var navbar = document.getElementsByClassName('navigation');
 
 window.addEventListener('scroll', function() {
+    
+    if(window.location.href.indexOf("impressum") > -1) {
 
-    scrollPosition = window.scrollY;
-
-    if (scrollPosition >= 658) {
-        navbar[0].classList.add('sticky');
+    } else if(window.location.href.indexOf("datenschutz") > -1) {
+    
     } else {
-        navbar[0].classList.remove('sticky');
+        scrollPosition = window.scrollY;
+    
+        if (scrollPosition >= 658) {
+            navbar[0].classList.add('sticky');
+        } else {
+            navbar[0].classList.remove('sticky');
+        }
     }
 });
 

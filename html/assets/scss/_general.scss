@@ -17,10 +17,12 @@ body {
 
 h2 {
     margin-bottom: 30px;
+    cursor: text;
 }
 
 h3 {
     margin-bottom: 20px;
+    cursor: text;
 }
 
 #references {
@@ -33,10 +35,12 @@ strong {
     + h2 {
         margin-bottom: 0;
     }
+    cursor: text;
 }
 
 p {
     line-height: 25px;
+    cursor: text;
 }
 
 a {
@@ -54,7 +58,10 @@ a {
     }
 }
 
-
+#legal-protection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 
 .shadow {
