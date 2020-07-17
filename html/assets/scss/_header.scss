@@ -3,21 +3,19 @@ header {
     display: flex;
     min-height: 600px;
     margin-top: 58px;
-
-    background-image: url("../images/geometry.png");
+    background: color(shade4) url("../images/geometry.png") repeat 0 0;
+    //background: color(shade4) url("https://subtlepatterns.com/patterns/geometry2.png") repeat 0 0;  ---- Alternative ----
+    animation: slide 20s linear infinite;
 
     .row {
         height: 100%;
 
         .head-illustration {
             position: absolute;
-            top: -30px;
-            left: -30px;
-            width: 106%;
-            max-width: 600px;
-            opacity: 0.1;
-            animation: float 4s ease-in-out infinite;
-            display: none;
+            animation: float 3s ease-in-out infinite;
+            max-width: 100px;
+            top: 30px;
+            left: 30px;
         }
 
         .header-info {
@@ -29,8 +27,10 @@ header {
             margin-top: 30px;
 
             .logo {
-                margin-bottom: 20px;
-                max-width: 200px;
+                margin-bottom: 50px;
+                max-width: 160px;
+                margin-top: -30px;
+                margin-left: 130px;
             }
 
             p {
@@ -62,16 +62,23 @@ header {
         .row {
             .head-illustration {
                 position: absolute;
-                top: -30px;
+                top: 0px;
                 left: -30px;
                 width: 106%;
-                max-width: 550px;
+                max-width: 530px;
                 opacity: 1;
                 display: inline-block;
             }
 
             .header-info {
                 padding: 0 60px;
+
+                .logo {
+                    margin-bottom: 30px;
+                    max-width: 270px;
+                    margin-top: 0;
+                    margin-left: 0;
+                }
 
                 .contact-link {
                     margin-bottom: 0;
@@ -91,5 +98,14 @@ header {
     }
     100% {
         transform: translatey(0px);
+    }
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -400px;
     }
 }
