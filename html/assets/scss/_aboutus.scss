@@ -4,6 +4,18 @@
     //background: color(shade4) url("../images/geometry2.png") repeat 0 0;
     animation: slide 20s linear infinite;
 
+    .tt-shape-top {
+        transform: translateY(-45px);
+    }
+
+    .tt-shape-bottom{
+        transform: rotate(180deg) translateY(-45px);
+    }
+
+    svg {
+        max-width: 100%;
+    }
+
     .about-text-wrapper {
         background: #ffffff;
         padding: 50px 50px;
