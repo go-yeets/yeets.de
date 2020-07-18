@@ -1,0 +1,21 @@
+body .light.cc_dialog button.cc_b_ok {
+    color: #fff;
+    background-color: color(primary1);
+    margin-right: 8px;
+}
+
+body .light.cc_dialog .cc_dialog_text {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+body .light.cc_dialog .cc_dialog_headline {
+    color: #fff;
+}
+
+body .light.cc_dialog {
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+    background-color: color(secondary1);
+    color: color(text2);
+
+}
