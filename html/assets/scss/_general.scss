@@ -99,3 +99,21 @@ a {
 label {
     margin: 0;;
 }
+
+.tablet-divider {
+    display: initial; 
+}
+
+.desktop-divider {
+    display: none;
+}
+
+@media(min-width: 768px){
+    .tablet-divider {
+        display: none;
+    }
+    
+    .desktop-divider {
+        display: initial;
+    }
+}
