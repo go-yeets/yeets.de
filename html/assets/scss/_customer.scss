@@ -2,10 +2,14 @@
     background: color(shade3);
 
     .customer-item {
-        text-align: center; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-            height: 40px;
+            max-height: 40px;
+            width: 100%;
+            max-width: 140px;
             margin: 20px 0;
             filter: grayscale(1);
     
