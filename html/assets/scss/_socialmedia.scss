@@ -1,35 +1,75 @@
 .social-media {
-    a{
-      display: inline-block;
-      
-      &:first-of-type {
-        img {
-          margin-left: 0px;
-        }
-      }
-
-      img {
+    a {
+        display: inline-block;
         width: 36px;
         height: 36px;
-        display: inline-block;
-        margin-left: 8px;
-        transition: 0.2s ease filter;
+        margin-right: 8px;
 
-        &:hover {
-          filter: brightness(0.5) hue-rotate(65deg);
+        &.facebook {
+            background: url(../images/icons/facebook_vio.svg) no-repeat center / contain;
+
+            &:hover {
+                background: url(../images/icons/facebook_vio_light.svg) no-repeat center / contain;
+            }
         }
-      }
-    }
-  }
 
-  @media (min-width: 768px) {
+        &.linkedin {
+            background: url(../images/icons/linkedin_vio.svg) no-repeat center / contain;
+
+            &:hover {
+                background: url(../images/icons/linkedin_vio_light.svg) no-repeat center / contain;
+            }
+        }
+
+        &.twitter {
+            background: url(../images/icons/twitter_vio.svg) no-repeat center / contain;
+
+            &:hover {
+                background: url(../images/icons/twitter_vio_light.svg) no-repeat center / contain;
+            }
+        }
+
+        &.dribble {
+            background: url(../images/icons/dribble_vio.svg) no-repeat center / contain;
+
+            &:hover {
+                background: url(../images/icons/dribble_vio_light.svg) no-repeat center / contain;
+            }
+        }
+
+        &:first-of-type {
+            img {
+                margin-left: 0;
+            }
+        }
+
+        img {
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            transition: 0.2s ease filter;
+
+            &:hover {
+                filter: brightness(0.5) hue-rotate(65deg);
+            }
+        }
+    }
+
+    a {
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
     header {
         .social-media {
-          margin-top: 40px;
-          position: relative;
-          width: 100%;
-          display: flex;
-          justify-content: flex-end;
+            margin-top: 40px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
-  }
+}
