@@ -97,16 +97,16 @@
 
 @media (min-width: 1200px){
     #references {
-        &:after {
-            height: 680px;
-            content: '';
-            width: 16%;
-            position: absolute;
-            background-image: url(../images/kachel.png);
-            background-position: 0 0;
-            right: 0;
-            background-size: 680px;
-        }
+        //&:after {
+        //    height: 680px;
+        //    content: '';
+        //    width: 16%;
+        //    position: absolute;
+        //    background-image: url(../images/kachel.png);
+        //    background-position: 0 0;
+        //    right: 0;
+        //    background-size: 680px;
+        //}
     }
 }
 
