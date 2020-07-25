@@ -1,31 +1,61 @@
 #expertise {
     padding: 100px 0;
+    background-image: linear-gradient(141deg, #452469, #532699);
+    color: color(text2);
 
     img {
-        width: 100%;
+        width: 110px;
+    }
+
+    .hearteyes, .handshake {
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
 
     .handshake {
-        text-align: right;
+        order: 1;
 
         img {
-            width: 100%;
+            width: 150px;
         }
+    }
+
+    .col-sm-5 {
+        text-align: center;
+    }
+
+    .tt-shape-top {
+        transform: translateY(-102px);
+        overflow: hidden;
+    }
+
+    .tt-shape-bottom {
+        transform: rotate(180deg) translateY(-102px);
     }
 }
 
 @media(min-width: 768px) {
     #expertise {
         img {
-            width: 110px;
             margin-left: 30px;
             margin-bottom: 50px;
+            text-align: left;
         }
+
         .handshake {
+            order: initial;
+
             img {
-                width: 150px;
                 margin-right: 30px;
+
+                text-align: right;
+                order: initial;
             }
+        }
+
+        .hearteyes, .handshake {
+            margin-top: 0;
+            margin-bottom: 0;
         }
     }
 }
