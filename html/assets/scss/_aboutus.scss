@@ -27,14 +27,6 @@
 
     img {
         width: 100%;
-        max-width: 220px;
-    }
-
-    .img-rbes, .img-yhew {
-        height: 207px;
-        width: 127px;
-        background-size: contain;
-        background-blend-mode: luminosity;
     }
 
     .img-rbes {
@@ -66,44 +58,74 @@
         }
     }
 
-    .img-yhew {
-        background-image: url(https://yeets.de/assets/images/Yannik_Alpha_440x720px.png);
-        background-color: color(secondary2);
-
-        &:before {
-            content: "";
-            display: block;
-            background: color(primary2);
-            width: 100px;
-            height: 10px;
-            position: absolute;
-            bottom: -10px;
-            background-blend-mode: luminosity;
-            left: 6px;
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            background: color(primary2);
-            width: 10px;
-            height: 100px;
-            position: absolute;
-            bottom: -10px;
-            background-blend-mode: luminosity;
-            left: 6px;
-        }
-    }
-
-    .personal-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
     .foto-wrapper {
         .row {
             margin-bottom: 100px;
+        }
+
+        .img-rbes, .img-yhew {
+            width: 128px;
+            height: 192px;
+            background-size: contain;
+            background-blend-mode: luminosity;
+        }
+
+        .yannik {
+            &:hover {
+                .img-yhew {
+                    width: 152px;
+                    height: 216px;
+                    margin-top: -12px;
+                    margin-left: -12px;
+
+                    img {
+                        width: 142%;
+                    }
+
+                    &:after {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .img-yhew {
+                overflow: hidden;
+                transition: all .2s ease-in-out;
+
+
+
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    bottom: -12px;
+                    left: 3px;
+                    background: color(primary2);
+                }
+
+                img {
+                    width: 185%;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    //background: linear-gradient(15deg, #4A2770 50%, rgba(74, 39, 112, 0) 80%);
+                    background: color(secondary1);
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+
+        .fixed-size {
+            width: 158px;
+            height: 192px;
+        }
+
+        .personal-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
         }
     }
 }
