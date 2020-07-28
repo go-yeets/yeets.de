@@ -23,15 +23,6 @@
     .col-sm-5 {
         text-align: center;
     }
-
-    .tt-shape-top {
-        transform: translateY(-110px);
-        overflow: hidden;
-    }
-
-    .tt-shape-bottom {
-        transform: rotate(180deg) translateY(-110px);
-    }
 }
 
 @media(min-width: 768px) {
