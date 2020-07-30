@@ -15,6 +15,10 @@ body {
     font-size: 15px;
 }
 
+h1, h2, h3, strong {
+    color: color(secondary1);
+}
+
 h2 {
     margin-bottom: 30px;
     cursor: text;
@@ -44,12 +48,12 @@ p {
 }
 
 a {
-    color: #2CE59E;
+    color: color(primary1);
     text-decoration: none;
     transition: 0.2s ease color;
 
     &:hover {
-        color: #397B82;
+        color: color(primary2);
         text-decoration: none;
         cursor: url('../images/icons/pointer-clickable.png'), auto;
         * {
@@ -86,14 +90,14 @@ a {
 .bullets-background {
     background-position: 0 0;
     background-size: 20px 20px;
-}
 
-.bullets-background.violet {
-    background-image: radial-gradient(#452469 15%, #4A2770 20%);
-}
+    &.violet {
+        background-image: radial-gradient(#452469 15%, #4A2770 20%);
+    }
 
-.bullets-background.grey {
-    background-image: radial-gradient(#F6F6F6 15%, #FFF 20%);
+    &.grey {
+        background-image: radial-gradient(#F6F6F6 15%, #FFF 20%);
+    }
 }
 
 label {
