@@ -13,111 +13,35 @@
         background-size: 20px 20px;
     }
 
-    .cardslider {
-        height: 800px;
+    .scroll-stack {
+        position: relative;
 
-        li[class*="cardslider__card--index-"] {
-            background: transparent;
+        h2 {
+            position: sticky;
+            top: calc(58px + 100px); //navi-height + top-spacing
         }
 
-        .cardslider__dot-btn {
-            border-color: color(shade2);
+        strong {
+            position: sticky;
+            top: calc(58px + 100px + 38px); //navi-height + top-spacing + h2-height
         }
 
-        .cardslider__dot--active {
-            .cardslider__dot-btn {
-                border: 2px solid color(primary1);
+        .stack-item {
+            position: sticky;
+            top: calc(58px + 100px + 38px + 22px + 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing
+            background: aqua;
+            width: 50%;
+            margin-top: 30px;
+
+            + .stack-item {
+                margin-top: 50vh;
+            }
+
+            @for $i from 0 through 5 {
+                &:nth-of-type(#{$i}) {
+                    transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
+                }
             }
         }
-    }
-
-        .references-item {
-            width: 280px;
-            background: color(secondary1);
-            color:color(text2);
-            border-radius: 6px;
-            padding: 30px; 
-            transform-style: preserve-3d;
-            transform: perspective(300px);
-
-            img {
-                width: 250px;
-                border-radius: 3px;
-                margin-bottom: 40px;
-                margin-top: 16px;
-                margin-left: 12px;
-                transform: translateZ(20px);
-            }
-
-            p {
-                margin-bottom:40px;
-                
-            }
-
-            a {
-                transform: translateZ(20px); 
-                display: inline-block;
-                margin-bottom: 16px;
-            }
-        }
-
-    .yeetboy-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .proud-yeetboy{
-        width: 100%;
-    }
-    .proud-yeetboy-head {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        transform: translateY(20px) translate3d(0,0,0) rotate(0.1deg) !important;
-        animation: float 2s ease-in-out infinite;
-        -webkit-font-smoothing: antialiased;
-        backface-visibility: hidden;
-    }
-}
-
-@media (min-width: 768px){
-    #references {
-
-        .references-item {
-            width: 400px;
-
-            img {
-                width: 370px;
-            }
-
-        }
-    }
-}
-
-@media (min-width: 1200px){
-    #references {
-        //&:after {
-        //    height: 680px;
-        //    content: '';
-        //    width: 16%;
-        //    position: absolute;
-        //    background-image: url(../images/kachel.png);
-        //    background-position: 0 0;
-        //    right: 0;
-        //    background-size: 680px;
-        //}
-    }
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(20px);
-    }
-    50% {
-        transform: translatey(24px);
-    }
-    100% {
-        transform: translateY(20px);
     }
 }
