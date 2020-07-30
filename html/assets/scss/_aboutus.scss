@@ -1,12 +1,7 @@
 #about-us {
     padding: 100px 0 40px 0;
     background: color(shade4) url("../images/geometry.png") repeat 0 0;
-    //background: color(shade4) url("../images/geometry2.png") repeat 0 0;
     animation: slide 20s linear infinite;
-
-    svg {
-        max-width: 100%;
-    }
 
     .about-text-wrapper {
         background: #ffffff;
@@ -17,39 +12,6 @@
         margin-bottom: 100px;
     }
 
-    img {
-        width: 100%;
-    }
-
-    .img-rbes {
-        background-image: url(https://yeets.de/assets/images/Rene_Alpha_440x720px.png);
-        background-color: color(primary2);
-
-        &:before {
-            content: "";
-            display: block;
-            background: color(secondary1);
-            width: 100px;
-            height: 10px;
-            position: absolute;
-            bottom: -10px;
-            background-blend-mode: luminosity;
-            right: 6px;
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            background: color(secondary1);
-            width: 10px;
-            height: 100px;
-            position: absolute;
-            bottom: -10px;
-            background-blend-mode: luminosity;
-            right: 6px;
-        }
-    }
-
     .foto-wrapper {
         .row {
             margin-bottom: 100px;
@@ -58,33 +20,30 @@
         .img-rbes, .img-yhew {
             width: 128px;
             height: 192px;
-            background-size: contain;
-            background-blend-mode: luminosity;
         }
 
-        .yannik {
+        .yannik, .rene {
             &:hover {
-                .img-yhew {
+                .img-yhew, .img-rbes {
                     width: 152px;
                     height: 216px;
                     margin-top: -12px;
                     margin-left: -12px;
 
-                    img {
+                    img:first-of-type {
                         width: 142%;
                     }
 
                     &:after {
+                        transform: rotate(13deg) translateY(-200%);
                         opacity: 0;
                     }
                 }
             }
 
-            .img-yhew {
+            .img-yhew, .img-rbes {
                 overflow: hidden;
                 transition: all .2s ease-in-out;
-
-
 
                 &:before {
                     content: "";
@@ -93,18 +52,83 @@
                     width: 100px;
                     height: 100px;
                     bottom: -12px;
-                    left: 3px;
-                    background: color(primary2);
                 }
 
                 img {
-                    width: 185%;
-                    position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    //background: linear-gradient(15deg, #4A2770 50%, rgba(74, 39, 112, 0) 80%);
-                    background: color(secondary1);
-                    transition: all .2s ease-in-out;
+                    &:first-of-type {
+                        width: 185%;
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: all .2s ease-in-out;
+                    }
+
+                    &:hover {
+                        + img {
+                            opacity: 1;
+                            transition: all 1s linear;
+                        }
+                    }
+                }
+
+
+            }
+
+            .img-yhew {
+                &:before {
+                    background: color(primary2);
+                    left: 3px;
+                }
+
+                img {
+                    &:first-of-type {
+                        background: color(secondary1);
+                    }
+
+                    &:hover {
+                        + img {
+                            transform: rotate(14deg) translateY(0px);
+                        }
+                    }
+
+                    &:last-of-type {
+                        width: 86px;
+                        position: absolute;
+                        top: 34%;
+                        left: 22%;
+                        transform: rotate(14deg) translateY(-50px);
+                        opacity: 0;
+                        transition: all .2s ease;
+                    }
+                }
+            }
+
+            .img-rbes {
+                &:before {
+                    background: color(secondary2);
+                    right: 3px;
+                }
+
+                img {
+                    &:first-of-type {
+                        background: color(primary2);
+                    }
+
+                    &:hover {
+                        + img {
+                            transform: translateY(0px) scale(-1, 1);
+                        }
+                    }
+
+                    &:last-of-type {
+                        width: 86px;
+                        position: absolute;
+                        top: 21%;
+                        left: 30%;
+                        transform: translateY(-50px) scale(-1, 1);
+                        opacity: 0;
+                        transition: all .2s ease;
+                    }
                 }
             }
         }
