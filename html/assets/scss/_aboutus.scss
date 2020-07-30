@@ -1,7 +1,19 @@
 #about-us {
     padding: 100px 0 40px 0;
-    background: color(shade4) url("../images/geometry.png") repeat 0 0;
-    animation: slide 20s linear infinite;
+    position: relative;
+    background: url(../images/geometry_background.png) repeat 0 0;
+    animation: slide 50s linear infinite;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: url(../images/geometry_foreground.png) repeat 0 0;
+        animation: slide 15s linear infinite;
+    }
 
     .about-text-wrapper {
         background: #ffffff;
@@ -87,7 +99,7 @@
 
                     &:hover {
                         + img {
-                            transform: rotate(14deg) translateY(0px);
+                            transform: rotate(16deg) translateY(0px);
                         }
                     }
 
