@@ -12,9 +12,22 @@
         flex-direction: column;
         display: flex;
 
+        &:hover {
+            strong {
+                filter: blur(0);
+                transform: rotate(0deg) translateY(0px);
+                opacity: 1;
+                transition: all .2s;
+            }
+        }
+
         strong {
             display: block;
-            margin-bottom: 16px; 
+            margin-bottom: 16px;
+            filter: blur(2px);
+            transform: rotate(-3deg) translateY(15px);
+            opacity: .5;
+            transition: all .2s;
         }
 
         img {
