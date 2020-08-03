@@ -80,7 +80,7 @@ function submitForm(){
     ajax.onreadystatechange = function() {
         if(ajax.readyState == 4 && ajax.status == 200) {
             if(ajax.responseText == "success"){
-                _("contactform").innerHTML = '<h3>Danke '+_("name").value+', deine Nachricht wurde versendet.</h3>';
+                _("contactform").innerHTML = '<h3>Danke '+_("name").value+', Ihre Nachricht wurde versendet. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.</h3>';
             } else {
                 _("status").innerHTML = ajax.responseText;
                 _("submit-btn").disabled = false;
