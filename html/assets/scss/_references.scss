@@ -2,15 +2,15 @@
     padding: 100px 0;
 
     &:before {
-        height: 620px;
-        content: '';
-        width: 50%;
-        margin-top: 130px;
-        position: absolute;
-        background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
-        background-position: 0 0;
-        right: 0;
-        background-size: 20px 20px;
+        //height: 620px;
+        //content: '';
+        //width: 50%;
+        //margin-top: 130px;
+        //position: absolute;
+        //background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
+        //background-position: 0 0;
+        //right: 0;
+        //background-size: 20px 20px;
     }
 
     .scroll-stack {
@@ -26,20 +26,49 @@
             top: calc(58px + 100px + 38px); //navi-height + top-spacing + h2-height
         }
 
-        .stack-item {
+        .stack-item-wrapper {
+            display: flex;
             position: sticky;
             top: calc(58px + 100px + 38px + 22px + 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing
-            background: aqua;
-            width: 50%;
-            margin-top: 30px;
 
-            + .stack-item {
-                margin-top: 50vh;
+            + .stack-item-wrapper {
+                margin-top: 33vh;
             }
 
             @for $i from 0 through 5 {
                 &:nth-of-type(#{$i}) {
                     transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
+                }
+            }
+
+            .crad-ist-von-bootstrap-belegt {
+                background: #fff;
+                border-radius: 4px;
+                overflow: hidden;
+                border-bottom: 4px solid #4A2770;
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+                width: 93%;
+                max-width: 720px;
+                margin-top: 30px;
+                padding: 20px;
+                display: flex;
+
+                .info {
+                    padding-right: 20px;
+                }
+
+                .image {
+                    margin: -20px -20px -20px 0;
+                }
+            }
+
+            .customer {
+                align-content: center;
+                display: flex;
+
+                img {
+                    width: 300px;
+                    margin: 40px;
                 }
             }
         }
