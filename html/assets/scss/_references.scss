@@ -45,20 +45,23 @@
                 background: #fff;
                 border-radius: 4px;
                 overflow: hidden;
-                border-bottom: 4px solid #4A2770;
                 box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
                 width: 93%;
                 max-width: 720px;
                 margin-top: 30px;
-                padding: 20px;
                 display: flex;
 
                 .info {
-                    padding-right: 20px;
+                    padding: 40px;
                 }
 
                 .image {
                     margin: -20px -20px -20px 0;
+                }
+
+                a {
+                    position: absolute;
+                    bottom: 40px;
                 }
             }
 
