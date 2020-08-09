@@ -1,17 +1,5 @@
 #references {
-    padding: 100px 0;
-
-    &:before {
-        //height: 620px;
-        //content: '';
-        //width: 50%;
-        //margin-top: 130px;
-        //position: absolute;
-        //background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
-        //background-position: 0 0;
-        //right: 0;
-        //background-size: 20px 20px;
-    }
+    padding: 100px 0 140px 0;
 
     .scroll-stack {
         position: relative;
@@ -50,13 +38,16 @@
                 max-width: 720px;
                 margin-top: 30px;
                 display: flex;
+                flex-direction: column;
 
                 .info {
                     padding: 40px;
                 }
 
                 .image {
-                    margin: -20px -20px -20px 0;
+                    img {
+                        max-width: 300px;
+                    }
                 }
 
                 a {
@@ -72,6 +63,28 @@
                 img {
                     width: 300px;
                     margin: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #references {
+
+        .scroll-stack {
+            position: relative;
+
+            .stack-item-wrapper {
+
+                @for $i from 0 through 5 {
+                    &:nth-of-type(#{$i}) {
+                        transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
+                    }
+                }
+
+                .crad-ist-von-bootstrap-belegt {
+                    flex-direction: row;
                 }
             }
         }
