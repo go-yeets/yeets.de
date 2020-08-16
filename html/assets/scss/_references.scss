@@ -17,7 +17,7 @@
         .stack-item-wrapper {
             display: flex;
             position: sticky;
-            top: calc(58px + 100px + 38px + 22px + 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing
+            top: calc(58px + 100px + 38px + 22px + 30px - 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing - ???
 
             + .stack-item-wrapper {
                 margin-top: 33vh;
