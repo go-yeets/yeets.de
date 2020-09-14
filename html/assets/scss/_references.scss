@@ -5,43 +5,34 @@
         position: relative;
 
         h2 {
-            position: sticky;
-            top: calc(58px + 100px); //navi-height + top-spacing
+
         }
 
         strong {
-            position: sticky;
-            top: calc(58px + 100px + 38px); //navi-height + top-spacing + h2-height
+
         }
 
         .stack-item-wrapper {
             display: flex;
-            position: sticky;
-            top: calc(58px + 100px + 38px + 22px + 30px - 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing - ???
-
-            + .stack-item-wrapper {
-                margin-top: 33vh;
-            }
-
-            @for $i from 0 through 5 {
-                &:nth-of-type(#{$i}) {
-                    transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
-                }
-            }
 
             .crad-ist-von-bootstrap-belegt {
                 background: #fff;
                 border-radius: 4px;
                 overflow: hidden;
                 box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
-                width: 93%;
-                max-width: 720px;
+                max-width: 850px;
                 margin-top: 30px;
                 display: flex;
                 flex-direction: column;
 
                 .info {
                     padding: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a {
+                        margin-top: auto;
+                    }
                 }
 
                 .image {
@@ -50,10 +41,7 @@
                     }
                 }
 
-                a {
-                    position: absolute;
-                    bottom: 40px;
-                }
+
             }
 
             .customer {
@@ -67,10 +55,41 @@
             }
         }
     }
+
+    .yeetboy-wrapper {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
     #references {
+
+        .scroll-stack {
+            h2 {
+                position: sticky;
+                top: calc(58px + 100px); //navi-height + top-spacing
+            }
+
+            strong {
+                position: sticky;
+                top: calc(58px + 100px + 38px); //navi-height + top-spacing + h2-height
+            }
+
+            .stack-item-wrapper {
+                position: sticky;
+                top: calc(58px + 100px + 38px + 22px + 30px - 30px); //navi-height + top-spacing + h2-height + strong-height + top-spacing - ???
+
+                + .stack-item-wrapper {
+                    margin-top: 8vh;
+                }
+
+                @for $i from 0 through 5 {
+                    &:nth-of-type(#{$i}) {
+                        transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
+                    }
+                }
+            }
+        }
 
         .scroll-stack {
             position: relative;
@@ -79,12 +98,69 @@
 
                 @for $i from 0 through 5 {
                     &:nth-of-type(#{$i}) {
-                        transform: translate(calc((#{$i} - 1) * 16px), calc((#{$i} - 1) * 16px));
+                        transform: translate(calc((#{$i} - 1) * 32px), calc((#{$i} - 1) * 32px));
                     }
                 }
 
                 .crad-ist-von-bootstrap-belegt {
                     flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    #references {
+        .yeetboy-wrapper {
+            display: block;
+            position: absolute;
+            width: 450px;
+            height: 100%;
+            right: -180px;
+
+            .inner-wrapper {
+                position: sticky;
+                top: 158px;
+
+                &:before {
+                    height: 288px;
+                    content: '';
+                    width: 2000%;
+                    margin-top: 140px;
+                    position: absolute;
+                    background-image: radial-gradient(#F6F6F6 15%, #fff 20%);
+                    background-position: 0 0;
+                    background-size: 20px 20px;
+                    left: -1000%;
+                }
+
+                .noch-ein-wrapper {
+                    position: relative;
+
+                    .proud-yeetboy {
+                        width: 100%;
+                    }
+
+                    .proud-yeetboy-head {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        animation: headbob 2s infinite;
+                    }
+
+                    @keyframes headbob {
+                        0% {
+                            transform: translatey(0px) rotate(1deg);
+                        }
+                        50% {
+                            transform: translatey(3px) rotate(-1deg);
+                        }
+                        100% {
+                            transform: translatey(0px) rotate(1deg);
+                        }
+                    }
                 }
             }
         }

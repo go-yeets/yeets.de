@@ -9,6 +9,21 @@
     .hearteyes, .handshake {
         margin-top: 20px;
         margin-bottom: 60px;
+
+        &:hover {
+            .animated {
+                animation-duration: var(--animate-duration);
+                animation-fill-mode: both;
+
+                &.infinite {
+                    animation-iteration-count: infinite;
+                }
+
+                &.slow {
+                    animation-duration: calc(var(--animate-duration) * 2);
+                }
+            }
+        }
     }
 
     .handshake {

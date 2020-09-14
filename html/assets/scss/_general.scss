@@ -13,6 +13,7 @@ body {
     color: #251438;
     scroll-behavior: smooth;
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, strong {
@@ -124,23 +125,6 @@ label {
     --animate-duration: 1s;
     --animate-delay: 1s;
     --animate-repeat: 1;
-}
-
-.hearteyes, .handshake {
-    &:hover {
-        .animated {
-            animation-duration: var(--animate-duration);
-            animation-fill-mode: both;
-
-            &.infinite {
-                animation-iteration-count: infinite;
-            }
-
-            &.slow {
-                animation-duration: calc(var(--animate-duration) * 2);
-            }
-        }
-    }
 }
 
 @media print, (prefers-reduced-motion: reduce) {

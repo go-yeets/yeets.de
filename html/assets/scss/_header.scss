@@ -21,7 +21,7 @@ header {
 
         .head-illustration {
             position: absolute;
-            animation: float 3s ease-in-out infinite;
+            animation: float 4s ease-in-out infinite;
             max-width: 100px;
             top: 30px;
             left: 30px;
@@ -100,13 +100,13 @@ header {
 
 @keyframes float {
     0% {
-        transform: translatey(0px);
+        transform: translatey(10px);
     }
     50% {
-        transform: translatey(-20px);
+        transform: translatey(30px);
     }
     100% {
-        transform: translatey(0px);
+        transform: translatey(10px);
     }
 }
 
