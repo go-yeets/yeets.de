@@ -39,31 +39,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-//TILT OPTIONS
-$( document ).ready(function() {
-    $('.js-tilt').tilt({
-        perspective: 2000
-    })
-});
-
-
-//INITIALIZE_S
-$(document).ready(function(){
-    $('.my-slider').cardslider({
-        keys: {
-          next: 38,
-          prev: 40
-        },
-        direction: 'right',
-        nav: false,
-        swipe: true,
-        dots: true,
-        loop: false,
-        beforeCardChange: null,
-        afterCardChange: null
-      })
-});
-
 //CONTACT_FORM
 function submitForm(){
     function _(id){ return document.getElementById(id); }
