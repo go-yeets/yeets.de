@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Yannik Hewlik
+N:Hewlik;Yannik
+GENDER:M;
+X-GENDER:Male
+BDAY:1995-09-04
+ORG:Hewlik & Besicke Yeets! GbR;
+TITLE:Geschäftsführer
+ADR;TYPE=WORK:;;Bandstraße 28;Essen;;45359;Germany
+TEL;TYPE=WORK,CELL:+4915757217984‬
+EMAIL;TYPE=WORK,INTERNET:yannik@yeets.de
+URL:yeets.de
+END:VCARD
