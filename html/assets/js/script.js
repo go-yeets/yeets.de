@@ -19,6 +19,12 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.querySelector('.menu').addEventListener('click', (e) => {
+    if (e.target.nodeName == 'A') {
+        document.querySelector('#menu-btn').checked = false;
+    }
+});
+
 //SMOOTH SCROLL TO TOP
 const scrollToTop = () => {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
