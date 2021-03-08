@@ -1,18 +1,14 @@
 BEGIN:VCARD
-VERSION:2.1
-N;CHARSET=ISO-8859-1:Besicke;Rene;;;Rene Besicke
-FN;CHARSET=ISO-8859-1: Rene Besicke
-ORG;CHARSET=ISO-8859-1:Hewlik & Besicke Yeets! GbR;Design
-TITLE;CHARSET=ISO-8859-1:Gesch‰ftsf¸hrer
-URL;type=WORK;CHARSET=ISO-8859-1:https://www.yeets.de
-URL;type=PRIVATE;CHARSET=ISO-8859-1:https://www.besicke.de
-EMAIL;CHARSET=ISO-8859-1;type=WORK;type=PREF:rene@yeets.de
-TEL;type=WORK;type=FAX;type=PREF:
-TEL;type=CELL;type=VOICE:015752011424
-ADR;CHARSET=ISO-8859-1;type=WORK;type=pref:;;Bandstraﬂe 28;Essen;;45359;Deutschland
-LABEL;WORK;PREF;ENCODING=QUOTED-PRINTABLE;CHARSET=ISO-8859-1:Bandstraﬂe 28=0D=0A=
-45359 Essen Deutschland
-ADR;CHARSET=ISO-8859-1;type=HOME;type=pref:;;Bandstraﬂe 28;Essen;;45359;Deutschland
-LABEL;HOME;PREF;ENCODING=QUOTED-PRINTABLE;CHARSET=ISO-8859-1:Bandstraﬂe 28=0D=0A=
-45359 Essen Deutschland
+VERSION:3.0
+FN:Rene Besicke
+N:Besicke;Rene
+GENDER:M;
+X-GENDER:Male
+BDAY:1993-03-15
+ORG:Hewlik & Besicke Yeets! GbR;
+TITLE:Gesch√§ftsf√ºhrer
+ADR;TYPE=WORK:;;Bandstra√üe 28;Essen;;45359;Germany
+TEL;TYPE=WORK,CELL:+4915752011424
+EMAIL;TYPE=WORK,INTERNET:rene@yeets.de
+URL:yeets.de
 END:VCARD
