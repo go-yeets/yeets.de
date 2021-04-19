@@ -5,7 +5,7 @@ button {
 
     &:focus {
         border: 0;
-    outline: 0;
+        outline: 0;
     }
 
     &:hover {
@@ -20,7 +20,7 @@ button {
     box-shadow: 0 6px 30px -10px color(primary1);
     padding: 8px 20px;
     border-radius: 3px;
-    color: color(text2);
+    color: color(text1);
     transition: ease-in-out .2s all;
 
     &:hover {
@@ -39,13 +39,13 @@ button {
         border-radius: 50%;
         border: 10px solid white;
 
-        .scroll-top{
+        .scroll-top {
             border-radius: 50%;
             display: inline-block;
             background: #fff;
             text-align: center;
             transition: box-shadow ease-in-out 0.2s;
-        
+
             img {
                 height: 25px;
                 width: 25px;
