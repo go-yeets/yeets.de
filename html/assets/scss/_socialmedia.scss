@@ -37,6 +37,14 @@
             }
         }
 
+        &.instagram {
+            background: url(../images/icons/instagram_vio.svg) no-repeat center / contain;
+
+            &:hover {
+                background: url(../images/icons/instagram_vio_light.svg) no-repeat center / contain;
+            }
+        }
+
         &:first-of-type {
             img {
                 margin-left: 0;
