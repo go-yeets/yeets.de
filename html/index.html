@@ -322,7 +322,7 @@
                 <h2>Ein Wort an Yeets!</h2>
                 <p>Aller Anfang ist schwer, das wissen wir, aber jedes Projekt hat irgendwo seinen Anfang – warum also
                     nicht hier?</p>
-                <form class="row" id="contactform" action="p546564.webspaceconfig.de/form.php" onsubmit="submitForm(); return false;">
+                <form class="row" id="contactform" action="/form.php" onsubmit="submitForm(); return false;">
                     <div class="form-group col-sm-6">
                         <input type="text" id="name" required>
                         <label for="">Name</label>
@@ -330,6 +330,9 @@
                     <div class="form-group col-sm-6">
                         <input type="text" id="mail" required>
                         <label for="">Email</label>
+                    </div>
+                    <div style="display: none; visibility: hidden;">
+                        <input type="text" autocomplete="off" name="puzzle" id="puzzle">
                     </div>
                     <div class="form-group col-12">
                         <textarea type="text" id="message" required></textarea>
@@ -406,26 +409,17 @@
             <div class="col-sm-5">
                 <div class="footer-right">
                     <div class="social-media">
-<!--                        <a href="https://www.facebook.com/goyeets" target="_blank" class="facebook">-->
-<!--                            <img src="./assets/images/icons/facebook.svg" alt="Facebook Icon"/>-->
-<!--                        </a>-->
                         <a href="https://www.instagram.com/go_yeets/" target="_blank" class="instagram">
                             <img src="./assets/images/icons/instagram.svg" alt="Instagram Icon"/>
                         </a>
                         <a href="https://www.linkedin.com/company/go-yeets/" target="_blank" class="linkedin">
                             <img src="./assets/images/icons/linkedin.svg" alt="Linkedin Icon"/>
                         </a>
-<!--                        <a href="https://twitter.com/go_yeets" target="_blank" class="twitter">-->
-<!--                            <img src="./assets/images/icons/twitter.svg" alt="Twitter Icon"/>-->
-<!--                        </a>-->
-<!--                        <a href="https://dribbble.com/go-yeets" target="_blank" class="dribble">-->
-<!--                            <img src="./assets/images/icons/dribble.svg" alt="Dribble Icon"/>-->
-<!--                        </a>-->
                     </div>
                     <div class="legal-protection">
-                        <a href="./impressum">Impressum</a>
+                        <a href="/impressum.html">Impressum</a>
                         <span>|</span>
-                        <a href="/datenschutz">Datenschutz</a>
+                        <a href="/datenschutz.html">Datenschutz</a>
                     </div>
                 </div>
             </div>
