@@ -55,6 +55,8 @@ function submitForm(){
     var formdata = new FormData();
     formdata.append( "name", _("name").value );
     formdata.append( "mail", _("mail").value );
+    formdata.append( "check", _("check").value );
+    formdata.append( "puzzle", _("puzzle").value );
     formdata.append( "message", _("message").value );
     var ajax = new XMLHttpRequest();
     ajax.open( "POST", "form.php" );
@@ -65,6 +67,8 @@ function submitForm(){
             } else {
                 _("status").innerHTML = ajax.responseText;
                 _("submit-btn").disabled = false;
+                alert("Da ist leider etwas schief gelaufen...");
+                location.reload();
             }
         }
     }

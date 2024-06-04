@@ -323,19 +323,23 @@
                 <p>Aller Anfang ist schwer, das wissen wir, aber jedes Projekt hat irgendwo seinen Anfang – warum also
                     nicht hier?</p>
                 <form class="row" id="contactform" action="/form.php" onsubmit="submitForm(); return false;">
-                    <div class="form-group col-sm-6">
-                        <input type="text" id="name" required>
+                    <div class="form-group col-sm-4">
+                        <input type="text" id="name" name="name" minlength="3" required>
                         <label for="">Name</label>
                     </div>
-                    <div class="form-group col-sm-6">
-                        <input type="text" id="mail" required>
+                    <div class="form-group col-sm-4">
+                        <input type="email" id="mail" name="email" required>
                         <label for="">Email</label>
                     </div>
+                    <div class="form-group col-sm-4">
+                        <input type="number" id="check" name="check" required>
+                        <label for="">12&nbsp;plus&nbsp;Sieben&nbsp;=</label>
+                    </div>
                     <div style="display: none; visibility: hidden;">
-                        <input type="text" autocomplete="off" name="puzzle" id="puzzle">
+                        <input type="text" autocomplete="off" name="puzzle" id="puzzle" minlength="1">
                     </div>
                     <div class="form-group col-12">
-                        <textarea type="text" id="message" required></textarea>
+                        <textarea type="text" id="message" minlength="6" required></textarea>
                         <label for="">Nachricht</label>
                     </div>
                     <div class="form-group col-12">
@@ -457,7 +461,6 @@
 
 <noscript>Cookie Consent by <a href="https://www.PrivacyPolicies.com/cookie-consent/" rel="nofollow">PrivacyPolicies.com</a></noscript>
 <!-- End Cookie Consent -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

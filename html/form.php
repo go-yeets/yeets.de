@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 $smtpHost = 'mail.smtp2go.com';
 $smtpPort = 2525; // You can also use port 2525
 $smtpUsername = 'yeets.de'; // Replace with your SMTP2GO username
-$smtpPassword = 'SANbtI8fag!y2Oa25'; // Replace with your SMTP2GO password
+$smtpPassword = 'ENV'; // Replace with your SMTP2GO password
 
 // Sender and recipient details
 $senderEmail = 'kontakt@yeets.de'; // Your email address
@@ -23,7 +23,7 @@ $body = '<b>Name:</b> '.$name.'<br><b>E-Mail:</b> '.$mail.'<br>'.nl2br($_POST['m
 
 // Create a new PHPMailer instance
 $mail = new PHPMailer(true);
-if(!$_POST['puzzle']) {
+if(!$_POST['puzzle'] && $_POST['check'] == '19') {
     try {
         // Server settings
         $mail->isSMTP();
