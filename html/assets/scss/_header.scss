@@ -29,7 +29,6 @@ header {
 
         .header-info {
             display: flex;
-            justify-content: center;
             flex-direction: column;
             align-items: baseline;
             padding: 0 30px;
@@ -39,7 +38,6 @@ header {
                 margin-bottom: 50px;
                 max-width: 160px;
                 margin-top: -30px;
-                margin-left: 130px;
             }
 
             p {
