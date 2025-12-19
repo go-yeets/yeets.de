@@ -1,21 +1,38 @@
 body .light.cc_dialog button.cc_b_ok {
-    color: #fff;
+    color: #315644;
     background-color: color(primary1);
     margin-right: 8px;
 }
 
+body .light.cc_dialog button.cc_b_ok:focus {
+    box-shadow: 0 0 0 2px #8458cd;
+}
+
+
 body .light.cc_dialog .cc_dialog_text {
-    color: #fff;
+    color: #000000;
     margin-bottom: 30px;
 }
 
 body .light.cc_dialog .cc_dialog_headline {
-    color: #fff;
+    color: #4c2b71;
 }
 
 body .light.cc_dialog {
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
-    background-color: color(secondary1);
-    color: color(text2);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #959595;
+    max-width: 520px;
+    margin: auto;
+    top: 50%;
+    border: 2px solid #4b2970;
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+    border-radius: 5px;
+    transform: translateY(-50%);
 
+}
+
+body .cc_overlay_lock {
+    background: rgba(0, 0, 0, .35) !important;
 }
