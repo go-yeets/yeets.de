@@ -9,6 +9,32 @@
     <meta name="author" content="Yannik Hewlik">
     <meta name="author" content="Rene Besicke">
     <meta name="robots" content="index">
+
+    <!-- Cookie Consent by https://www.PrivacyPolicies.com -->
+    <script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({
+                "notice_banner_type": "interstitial",
+                "consent_type": "express",
+                "language": "de",
+                "website_name": "Yeets!",
+                "change_preferences_selector": "#changePreferences"
+            });
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script cookie-consent="tracking">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRJDKQN8');</script>
+    <!-- End Google Tag Manager -->
+
+    <noscript>Cookie Consent by <a href="https://www.PrivacyPolicies.com/cookie-consent/"
+                                   rel="nofollow">PrivacyPolicies.com</a></noscript>
+
     <title>Yeets!</title>
     <link rel="stylesheet" href="https://use.typekit.net/jfc2lyz.css">
 
@@ -36,6 +62,12 @@
 </head>
 
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript cookie-consent="tracking"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJDKQN8"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
 <div class="background-noise-css"></div>
 <style>
@@ -447,25 +479,25 @@
                 <h2>Ein Wort an Yeets!</h2>
                 <p>Aller Anfang ist schwer, das wissen wir, aber jedes Projekt hat irgendwo seinen Anfang – warum also
                     nicht hier?</p>
-                <form class="row" id="contactform" action="/form.php" onsubmit="submitForm(); return false;">
+                <form class="row" id="contactform" action="/mailer.php" onsubmit="submitForm(); return false;">
                     <div class="form-group col-sm-4">
                         <input type="text" id="name" name="name" minlength="3" required>
-                        <label for="">Name</label>
+                        <label for="name">Name</label>
                     </div>
                     <div class="form-group col-sm-4">
-                        <input type="email" id="mail" name="email" required>
-                        <label for="">Email</label>
+                        <input type="email" id="mail" name="mail" required>
+                        <label for="mail">Email</label>
                     </div>
                     <div class="form-group col-sm-4">
                         <input type="number" id="check" name="check" required>
-                        <label for="">12&nbsp;plus&nbsp;Sieben&nbsp;=</label>
+                        <label for="check">12&nbsp;plus&nbsp;Sieben&nbsp;=</label>
                     </div>
                     <div style="display: none; visibility: hidden;">
                         <input type="text" autocomplete="off" name="puzzle" id="puzzle" minlength="1">
                     </div>
                     <div class="form-group col-12">
-                        <textarea type="text" id="message" minlength="6" required></textarea>
-                        <label for="">Nachricht</label>
+                        <textarea type="text" id="message" name="message" minlength="6" required></textarea>
+                        <label for="message">Nachricht</label>
                     </div>
                     <div class="form-group col-12">
                         <button id="submit-btn" class="button-primary">
@@ -557,37 +589,28 @@
     </div>
 </footer>
 
-<!-- Cookie Consent by https://www.PrivacyPolicies.com -->
-<script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        cookieconsent.run({
-            "notice_banner_type": "interstitial",
-            "consent_type": "express",
-            "language": "de",
-            "website_name": "Yeets!",
-            "change_preferences_selector": "#changePreferences"
-        });
-    });
-</script>
-
-<!-- Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="text/plain" cookie-consent="tracking" async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-172421788-1"></script>
-<script type="text/plain" cookie-consent="tracking">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-172421788-1');
-
-</script>
-<!-- end of Google Analytics-->
-
-<noscript>Cookie Consent by <a href="https://www.PrivacyPolicies.com/cookie-consent/"
-                               rel="nofollow">PrivacyPolicies.com</a></noscript>
 <!-- End Cookie Consent -->
 <script src="./assets/js/script.js"></script>
+
+<script cookie-consent="tracking">
+    // Initialisiere den Data Layer, falls noch nicht geschehen (sollte der GTM-Code machen)
+    window.dataLayer = window.dataLayer || [];
+
+    // Finde deinen Button anhand der ID
+    const submitButton = document.getElementById('submit-btn');
+
+    // Füge einen Event Listener hinzu, der auf Klicks reagiert
+    if (submitButton) {
+        submitButton.addEventListener('click', function() {
+            // Sende ein Ereignis an den Data Layer
+            dataLayer.push({
+                'event': 'custom_button_click', // Das ist der Name deines benutzerdefinierten Ereignisses
+                'button_id': 'submit-btn',       // Weitere Informationen über den Button
+                'button_text': this.innerText    // Z.B. den Text des Buttons
+            });
+            console.log('Data Layer Event "custom_button_click" gepusht!');
+        });
+    }
+</script>
 </body>
 </html>
