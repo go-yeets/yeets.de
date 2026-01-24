@@ -1,0 +1,16 @@
+{
+  "name": "yeets.de",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass html/assets/scss/main.scss:html/assets/scss/main.min.css --style compressed",
+    "watch:css": "sass html/assets/scss/main.scss:html/assets/scss/main.min.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}
